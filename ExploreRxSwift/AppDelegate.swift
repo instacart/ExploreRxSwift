@@ -1,11 +1,3 @@
-//
-//  AppDelegate.swift
-//  ExploreRxSwift
-//
-//  Created by Marko Pejovic on 4/9/19.
-//  Copyright © 2019 markopejovic. All rights reserved.
-//
-
 import UIKit
 
 @UIApplicationMain
@@ -15,7 +7,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+
+        window = UIWindow()
+        let controller = MainController()
+        let navController = UINavigationController(rootViewController: controller)
+        window?.rootViewController = navController
+        window?.makeKeyAndVisible()
+        
         return true
     }
 
