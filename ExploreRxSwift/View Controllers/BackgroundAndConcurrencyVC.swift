@@ -7,16 +7,16 @@ final class BackgroundAndConcurrencyVC: TopicVC {
     lazy var observable: Observable<Bool> = Observable
         .just(true)
         .do(onSubscribed: {
-            logEvent("subscribed")
+            Log.threadEvent("subscribed")
         })
         .map {
-            logEvent("Before sleep in background")
+            Log.threadEvent("Before sleep in background")
             sleep(5)
             return $0
         }
         .subscribeOn(ConcurrentDispatchQueueScheduler(qos: .background))
         .observeOn(ConcurrentDispatchQueueScheduler(queue: .main)).map { (value: Bool) -> Bool in
-            logEvent("Before sleep in main")
+            Log.threadEvent("Before sleep in main")
             sleep(5)
             return value
     }
@@ -35,13 +35,9 @@ final class BackgroundAndConcurrencyVC: TopicVC {
 
     @objc func buttonTapped() {
         let subscription = observable.subscribe(onNext:{ event in
-            logEvent("On next \(event)")
+            Log.threadEvent("On next \(event)")
         })
         subscription.disposed(by: bag)
     }
 }
 
-func logEvent(_ items: Any...) {
-    print(Thread.current)
-    print(items)
-}

@@ -14,12 +14,13 @@
 		778629DA225D0106009BDE15 /* ExploreRxSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778629D9225D0106009BDE15 /* ExploreRxSwiftTests.swift */; };
 		779B17D722691146008F6BB0 /* Topics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779B17D622691146008F6BB0 /* Topics.swift */; };
 		779B17DB22691182008F6BB0 /* BackgroundAndConcurrencyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779B17DA22691182008F6BB0 /* BackgroundAndConcurrencyVC.swift */; };
-		779B17DD226911BE008F6BB0 /* AccumulateCallsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779B17DC226911BE008F6BB0 /* AccumulateCallsVC.swift */; };
+		779B17DD226911BE008F6BB0 /* SimpleAndIncreasingPooling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779B17DC226911BE008F6BB0 /* SimpleAndIncreasingPooling.swift */; };
 		779B17DF226918BD008F6BB0 /* TopicVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779B17DE226918BD008F6BB0 /* TopicVC.swift */; };
 		779B17F222692902008F6BB0 /* RxAtomic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 779B17EE22692902008F6BB0 /* RxAtomic.framework */; };
 		779B17F322692902008F6BB0 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 779B17EF22692902008F6BB0 /* RxCocoa.framework */; };
 		779B17F422692902008F6BB0 /* RxBlocking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 779B17F022692902008F6BB0 /* RxBlocking.framework */; };
 		779B17F522692902008F6BB0 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 779B17F122692902008F6BB0 /* RxSwift.framework */; };
+		77B86B9F226FC7FE00727D42 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B86B9E226FC7FE00727D42 /* Log.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,12 +58,13 @@
 		778629DB225D0106009BDE15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		779B17D622691146008F6BB0 /* Topics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Topics.swift; sourceTree = "<group>"; };
 		779B17DA22691182008F6BB0 /* BackgroundAndConcurrencyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundAndConcurrencyVC.swift; sourceTree = "<group>"; };
-		779B17DC226911BE008F6BB0 /* AccumulateCallsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccumulateCallsVC.swift; sourceTree = "<group>"; };
+		779B17DC226911BE008F6BB0 /* SimpleAndIncreasingPooling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleAndIncreasingPooling.swift; sourceTree = "<group>"; };
 		779B17DE226918BD008F6BB0 /* TopicVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicVC.swift; sourceTree = "<group>"; };
 		779B17EE22692902008F6BB0 /* RxAtomic.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxAtomic.framework; path = Carthage/Build/iOS/RxAtomic.framework; sourceTree = "<group>"; };
 		779B17EF22692902008F6BB0 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
 		779B17F022692902008F6BB0 /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBlocking.framework; path = Carthage/Build/iOS/RxBlocking.framework; sourceTree = "<group>"; };
 		779B17F122692902008F6BB0 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		77B86B9E226FC7FE00727D42 /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,7 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				779B17DA22691182008F6BB0 /* BackgroundAndConcurrencyVC.swift */,
-				779B17DC226911BE008F6BB0 /* AccumulateCallsVC.swift */,
+				779B17DC226911BE008F6BB0 /* SimpleAndIncreasingPooling.swift */,
 				779B17DE226918BD008F6BB0 /* TopicVC.swift */,
 			);
 			path = "View Controllers";
@@ -142,6 +144,7 @@
 		779B17D92269115F008F6BB0 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				77B86B9E226FC7FE00727D42 /* Log.swift */,
 				779B17D622691146008F6BB0 /* Topics.swift */,
 			);
 			path = Models;
@@ -289,7 +292,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				779B17DB22691182008F6BB0 /* BackgroundAndConcurrencyVC.swift in Sources */,
-				779B17DD226911BE008F6BB0 /* AccumulateCallsVC.swift in Sources */,
+				77B86B9F226FC7FE00727D42 /* Log.swift in Sources */,
+				779B17DD226911BE008F6BB0 /* SimpleAndIncreasingPooling.swift in Sources */,
 				779B17D722691146008F6BB0 /* Topics.swift in Sources */,
 				778629C7225D0105009BDE15 /* MainController.swift in Sources */,
 				779B17DF226918BD008F6BB0 /* TopicVC.swift in Sources */,
