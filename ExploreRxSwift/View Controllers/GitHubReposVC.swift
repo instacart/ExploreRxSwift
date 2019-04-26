@@ -65,7 +65,7 @@ final class GitHubReposVC: TopicVC, UITableViewDelegate, UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
         let model = repos![indexPath.row]
 
-        cell.textLabel?.text = model.repo.name + " - " + (model.release?.name ?? "")
+        cell.textLabel?.text = model.repo.name + " - " + (model.release?.tagName ?? "")
         cell.detailTextLabel?.text = String(model.repo.stargazersCount)
 
         return cell

@@ -8,4 +8,5 @@ struct Repo: Codable {
 
 struct Release: Codable {
     let name: String
+    let tagName: String
 }
