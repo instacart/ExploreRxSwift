@@ -35,7 +35,7 @@ final class SimpleAndIncreasingPooling: TopicVC {
                 switch event {
                 case .next(let value): Log.threadEvent("Value \(value)")
                 case .error(let error): Log.threadEvent("Error", error)
-                case .completed: Log.threadEvent("Completed", self ?? "Buu")
+                case .completed: Log.threadEvent("Completed", self)
                 }
             }
             //.disposed(by: bag)
