@@ -1,7 +1,7 @@
 import UIKit
 import RxSwift
 
-final class SimpleAndIncreasingPooling: TopicVC {
+final class SimpleAndIncreasingPoolingVC: TopicVC {
 
     var disposable: Disposable? {
         didSet {
@@ -35,7 +35,7 @@ final class SimpleAndIncreasingPooling: TopicVC {
                 switch event {
                 case .next(let value): Log.threadEvent("Value \(value)")
                 case .error(let error): Log.threadEvent("Error", error)
-                case .completed: Log.threadEvent("Completed", self)
+                case .completed: Log.threadEvent("Completed", self ?? "retained self gone")
                 }
             }
             //.disposed(by: bag)
