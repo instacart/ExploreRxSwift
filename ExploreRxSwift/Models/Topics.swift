@@ -5,6 +5,7 @@ enum Topics: String, CaseIterable {
     case accumulateTapEvents = "Accumulate calls (using buffer)"
     case simpleAndIncreasingPooling = "Simple and Advanced polling (using interval and repeatWhen)"
     case debounceTextField = "Instant/Auto searching text listeners (using debounce)"
+    case githubRepos = "GitHub repos"
 
     var viewController: UIViewController {
         switch self {
@@ -12,6 +13,7 @@ enum Topics: String, CaseIterable {
         case .accumulateTapEvents: return AccumulateCallsVC()
         case .simpleAndIncreasingPooling: return SimpleAndIncreasingPoolingVC()
         case .debounceTextField: return DebounceTextFieldVC()
+        case .githubRepos: return GitHubReposVC()
         }
     }
 }
