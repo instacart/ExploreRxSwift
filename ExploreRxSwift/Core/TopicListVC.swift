@@ -1,19 +1,19 @@
 import UIKit
 
-final class MainController: UITableViewController {
-    private var cellReuseIdentifier: String = "default_cell"
-
+final class TopicListVC: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "ExploreRxSwift"
         navigationController?.navigationBar.prefersLargeTitles = true
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellReuseIdentifier)
+        tableView.register(Cell.self, forCellReuseIdentifier: Cell.id)
+        tableView.rowHeight = UITableView.automaticDimension
+        tableView.estimatedRowHeight = 60
     }
 }
 
 // MARK: - UITableViewDataSource
 
-extension MainController {
+extension TopicListVC {
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
@@ -23,9 +23,13 @@ extension MainController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: cellReuseIdentifier, for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: Cell.id, for: indexPath)
 
+        cell.textLabel?.numberOfLines = 0
         cell.textLabel?.text = Topics.allCases[indexPath.row].rawValue
+
+        cell.detailTextLabel?.numberOfLines = 0
+        cell.detailTextLabel?.text = Topics.allCases[indexPath.row].subtitle
 
         return cell
     }
@@ -33,12 +37,26 @@ extension MainController {
 
 // MARK: - UITableViewDataSource
 
-extension MainController {
+extension TopicListVC {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let topic = Topics.allCases[indexPath.row]
         let topicVC = topic.viewController
         topicVC.title = topic.rawValue
         navigationController?.pushViewController(topicVC, animated: true)
+    }
+}
+
+// MARK: -
+
+private class Cell: UITableViewCell {
+    static let id: String = "default_cell"
+
+    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
+        super.init(style: .subtitle, reuseIdentifier: reuseIdentifier)
+    }
+
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
 }
 

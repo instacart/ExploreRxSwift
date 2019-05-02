@@ -7,14 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		775E2C6B227B5A4B00CEF06C /* OutputPresenting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775E2C6A227B5A4B00CEF06C /* OutputPresenting.swift */; };
+		775E2C6F227B5CBB00CEF06C /* SimplePoolingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775E2C6E227B5CBB00CEF06C /* SimplePoolingVC.swift */; };
 		778629C5225D0105009BDE15 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778629C4225D0105009BDE15 /* AppDelegate.swift */; };
-		778629C7225D0105009BDE15 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778629C6225D0105009BDE15 /* MainController.swift */; };
+		778629C7225D0105009BDE15 /* TopicListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778629C6225D0105009BDE15 /* TopicListVC.swift */; };
 		778629CC225D0106009BDE15 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 778629CB225D0106009BDE15 /* Assets.xcassets */; };
 		778629CF225D0106009BDE15 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 778629CD225D0106009BDE15 /* LaunchScreen.storyboard */; };
 		778629DA225D0106009BDE15 /* ExploreRxSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778629D9225D0106009BDE15 /* ExploreRxSwiftTests.swift */; };
 		779B17D722691146008F6BB0 /* Topics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779B17D622691146008F6BB0 /* Topics.swift */; };
 		779B17DB22691182008F6BB0 /* BackgroundAndConcurrencyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779B17DA22691182008F6BB0 /* BackgroundAndConcurrencyVC.swift */; };
-		779B17DD226911BE008F6BB0 /* SimpleAndIncreasingPoolingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779B17DC226911BE008F6BB0 /* SimpleAndIncreasingPoolingVC.swift */; };
 		779B17DF226918BD008F6BB0 /* TopicVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779B17DE226918BD008F6BB0 /* TopicVC.swift */; };
 		779B17F222692902008F6BB0 /* RxAtomic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 779B17EE22692902008F6BB0 /* RxAtomic.framework */; };
 		779B17F322692902008F6BB0 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 779B17EF22692902008F6BB0 /* RxCocoa.framework */; };
@@ -52,9 +53,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		775E2C6A227B5A4B00CEF06C /* OutputPresenting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutputPresenting.swift; sourceTree = "<group>"; };
+		775E2C6E227B5CBB00CEF06C /* SimplePoolingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimplePoolingVC.swift; sourceTree = "<group>"; };
 		778629C1225D0105009BDE15 /* ExploreRxSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExploreRxSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		778629C4225D0105009BDE15 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		778629C6225D0105009BDE15 /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
+		778629C6225D0105009BDE15 /* TopicListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicListVC.swift; sourceTree = "<group>"; };
 		778629CB225D0106009BDE15 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		778629CE225D0106009BDE15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		778629D0225D0106009BDE15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -63,7 +66,6 @@
 		778629DB225D0106009BDE15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		779B17D622691146008F6BB0 /* Topics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Topics.swift; sourceTree = "<group>"; };
 		779B17DA22691182008F6BB0 /* BackgroundAndConcurrencyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundAndConcurrencyVC.swift; sourceTree = "<group>"; };
-		779B17DC226911BE008F6BB0 /* SimpleAndIncreasingPoolingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleAndIncreasingPoolingVC.swift; sourceTree = "<group>"; };
 		779B17DE226918BD008F6BB0 /* TopicVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicVC.swift; sourceTree = "<group>"; };
 		779B17EE22692902008F6BB0 /* RxAtomic.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxAtomic.framework; path = Carthage/Build/iOS/RxAtomic.framework; sourceTree = "<group>"; };
 		779B17EF22692902008F6BB0 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
@@ -99,6 +101,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		775E2C69227B5A3200CEF06C /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				77B86B9E226FC7FE00727D42 /* Log.swift */,
+				775E2C6A227B5A4B00CEF06C /* OutputPresenting.swift */,
+				779B17DE226918BD008F6BB0 /* TopicVC.swift */,
+				778629C6225D0105009BDE15 /* TopicListVC.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
 		778629B8225D0105009BDE15 = {
 			isa = PBXGroup;
 			children = (
@@ -121,10 +134,10 @@
 		778629C3225D0105009BDE15 /* ExploreRxSwift */ = {
 			isa = PBXGroup;
 			children = (
+				775E2C69227B5A3200CEF06C /* Core */,
 				779B17D92269115F008F6BB0 /* Models */,
-				779B17D822691154008F6BB0 /* View Controllers */,
+				779B17D822691154008F6BB0 /* Examples */,
 				778629C4225D0105009BDE15 /* AppDelegate.swift */,
-				778629C6225D0105009BDE15 /* MainController.swift */,
 				778629CB225D0106009BDE15 /* Assets.xcassets */,
 				778629CD225D0106009BDE15 /* LaunchScreen.storyboard */,
 				778629D0225D0106009BDE15 /* Info.plist */,
@@ -141,23 +154,21 @@
 			path = ExploreRxSwiftTests;
 			sourceTree = "<group>";
 		};
-		779B17D822691154008F6BB0 /* View Controllers */ = {
+		779B17D822691154008F6BB0 /* Examples */ = {
 			isa = PBXGroup;
 			children = (
-				D41281492272CF2F0053D8F4 /* GitHubReposVC.swift */,
-				779B17DE226918BD008F6BB0 /* TopicVC.swift */,
 				779B17DA22691182008F6BB0 /* BackgroundAndConcurrencyVC.swift */,
-				779B17DC226911BE008F6BB0 /* SimpleAndIncreasingPoolingVC.swift */,
 				77C8C87F2279023E00E66AB6 /* AccumulateCallsVC.swift */,
+				775E2C6E227B5CBB00CEF06C /* SimplePoolingVC.swift */,
 				77C8C88122790CDC00E66AB6 /* DebounceTextFieldVC.swift */,
+				D41281492272CF2F0053D8F4 /* GitHubReposVC.swift */,
 			);
-			path = "View Controllers";
+			path = Examples;
 			sourceTree = "<group>";
 		};
 		779B17D92269115F008F6BB0 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				77B86B9E226FC7FE00727D42 /* Log.swift */,
 				779B17D622691146008F6BB0 /* Topics.swift */,
 				D41281452272CD7E0053D8F4 /* GitHubAPI.swift */,
 				D41281472272CE0A0053D8F4 /* Repo.swift */,
@@ -308,17 +319,17 @@
 			files = (
 				779B17DB22691182008F6BB0 /* BackgroundAndConcurrencyVC.swift in Sources */,
 				77B86B9F226FC7FE00727D42 /* Log.swift in Sources */,
-				779B17DD226911BE008F6BB0 /* SimpleAndIncreasingPoolingVC.swift in Sources */,
-				779B17DD226911BE008F6BB0 /* SimpleAndIncreasingPooling.swift in Sources */,
 				D41281482272CE0A0053D8F4 /* Repo.swift in Sources */,
 				779B17D722691146008F6BB0 /* Topics.swift in Sources */,
+				775E2C6F227B5CBB00CEF06C /* SimplePoolingVC.swift in Sources */,
 				D412814A2272CF2F0053D8F4 /* GitHubReposVC.swift in Sources */,
-				778629C7225D0105009BDE15 /* MainController.swift in Sources */,
+				778629C7225D0105009BDE15 /* TopicListVC.swift in Sources */,
 				779B17DF226918BD008F6BB0 /* TopicVC.swift in Sources */,
 				77C8C8802279023E00E66AB6 /* AccumulateCallsVC.swift in Sources */,
 				77C8C88222790CDC00E66AB6 /* DebounceTextFieldVC.swift in Sources */,
 				778629C5225D0105009BDE15 /* AppDelegate.swift in Sources */,
 				D41281462272CD7E0053D8F4 /* GitHubAPI.swift in Sources */,
+				775E2C6B227B5A4B00CEF06C /* OutputPresenting.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
