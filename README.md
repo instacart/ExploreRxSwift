@@ -1,6 +1,6 @@
 # 🧭 ExploreRxSwift
 
-**ExploreRxSwift** is a Swift implementation of [kaushikgopal's](https://github.com/kaushikgopal) [RxJava Android Samples](https://github.com/), as well as collection of additional examples of RxSwift in action. Hope is to make this a great resource for Swift developers new to ReactiveX by demonstrating its benefits with simple use cases. For those with more experience, **ExploreR** will try to document potential pitfalls and other do's and (maybe) don’ts.
+**ExploreRxSwift** is a Swift implementation of [kaushikgopal's](https://github.com/kaushikgopal) [RxJava Android Samples](https://github.com/kaushikgopal/RxJava-Android-Samples), as well as collection of additional examples of RxSwift in action. Hope is to make this a great resource for Swift developers new to ReactiveX by demonstrating its benefits with simple use cases. For those with more experience, **ExploreR** will try to document potential pitfalls and other do's and (maybe) don’ts.
 
 ### Cold launch
 - Official documentation on [ReactiveX website](http://reactivex.io/intro.html)
