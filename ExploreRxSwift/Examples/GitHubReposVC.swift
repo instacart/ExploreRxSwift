@@ -1,6 +1,7 @@
 import UIKit
 import RxSwift
 import Foundation
+import RxCocoa
 
 final class GitHubReposVC: TopicVC, UITableViewDelegate, UITableViewDataSource {
     private let disposeBag = DisposeBag()
@@ -34,13 +35,11 @@ final class GitHubReposVC: TopicVC, UITableViewDelegate, UITableViewDataSource {
                 repos.sorted(by: { $0.stargazersCount > $1.stargazersCount })
             }
             .filter { $0.count > 5 }
-            .flatMap { [weak self] repos -> Observable<[(Repo, Release?)]> in
+            .flatMap { [weak self] repos -> Driver<[(Repo, Release?)]> in
                 guard let self = self else { return .just([]) }
-
                 let observables = repos.map { self.releases(forRepo: $0) }
-                return Observable.combineLatest(observables)
+                return Driver.combineLatest(observables)
             }
-            .observeOn(MainScheduler.instance)
             .subscribe(onNext: { [weak self] repos in
                 self?.repos = repos.map { RepoWithRelease(repo: $0.0, release: $0.1) }
                 self?.tableView.reloadData()
@@ -50,11 +49,11 @@ final class GitHubReposVC: TopicVC, UITableViewDelegate, UITableViewDataSource {
             .disposed(by: disposeBag)
     }
 
-    private func releases(forRepo repo: Repo) -> Observable<(Repo, Release?)> {
+    private func releases(forRepo repo: Repo) -> Driver<(Repo, Release?)> {
         return api.releases(forRepo: repo.fullName)
             .map { (repo, $0.first) }
             .startWith((repo, nil))
-            .catchErrorJustReturn((repo, nil))
+            .asDriver(onErrorJustReturn: (repo, nil))
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
