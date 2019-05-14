@@ -12,7 +12,7 @@ extension OutputPresenting {
     func setupViews() {
         textView.isEditable = false
         textView.font = UIFont(name: "Menlo-Regular", size: 10)
-        textView.backgroundColor = UIColor(red: 0.95, green: 0.95, blue: 0.95, alpha: 1)
+        textView.backgroundColor = Constant.Color.lightGray
 
         view.addSubview(textView)
         view.addSubview(contentView)

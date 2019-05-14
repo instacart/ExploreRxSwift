@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		772374F1228B75580077BF79 /* FormValidationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772374F0228B75580077BF79 /* FormValidationVC.swift */; };
+		772374F3228B79470077BF79 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772374F2228B79470077BF79 /* Constant.swift */; };
 		775E2C6B227B5A4B00CEF06C /* OutputPresenting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775E2C6A227B5A4B00CEF06C /* OutputPresenting.swift */; };
 		775E2C6F227B5CBB00CEF06C /* SimplePoolingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775E2C6E227B5CBB00CEF06C /* SimplePoolingVC.swift */; };
 		778629C5225D0105009BDE15 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778629C4225D0105009BDE15 /* AppDelegate.swift */; };
@@ -53,6 +55,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		772374F0228B75580077BF79 /* FormValidationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormValidationVC.swift; sourceTree = "<group>"; };
+		772374F2228B79470077BF79 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		775E2C6A227B5A4B00CEF06C /* OutputPresenting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutputPresenting.swift; sourceTree = "<group>"; };
 		775E2C6E227B5CBB00CEF06C /* SimplePoolingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimplePoolingVC.swift; sourceTree = "<group>"; };
 		778629C1225D0105009BDE15 /* ExploreRxSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExploreRxSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -108,6 +112,7 @@
 				775E2C6A227B5A4B00CEF06C /* OutputPresenting.swift */,
 				779B17DE226918BD008F6BB0 /* TopicVC.swift */,
 				778629C6225D0105009BDE15 /* TopicListVC.swift */,
+				772374F2228B79470077BF79 /* Constant.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -161,6 +166,7 @@
 				77C8C87F2279023E00E66AB6 /* AccumulateCallsVC.swift */,
 				775E2C6E227B5CBB00CEF06C /* SimplePoolingVC.swift */,
 				77C8C88122790CDC00E66AB6 /* DebounceTextFieldVC.swift */,
+				772374F0228B75580077BF79 /* FormValidationVC.swift */,
 				D41281492272CF2F0053D8F4 /* GitHubReposVC.swift */,
 			);
 			path = Examples;
@@ -319,7 +325,9 @@
 			files = (
 				779B17DB22691182008F6BB0 /* BackgroundAndConcurrencyVC.swift in Sources */,
 				77B86B9F226FC7FE00727D42 /* Log.swift in Sources */,
+				772374F3228B79470077BF79 /* Constant.swift in Sources */,
 				D41281482272CE0A0053D8F4 /* Repo.swift in Sources */,
+				772374F1228B75580077BF79 /* FormValidationVC.swift in Sources */,
 				779B17D722691146008F6BB0 /* Topics.swift in Sources */,
 				775E2C6F227B5CBB00CEF06C /* SimplePoolingVC.swift in Sources */,
 				D412814A2272CF2F0053D8F4 /* GitHubReposVC.swift in Sources */,

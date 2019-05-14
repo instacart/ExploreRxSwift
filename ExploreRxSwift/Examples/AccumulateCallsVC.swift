@@ -6,7 +6,7 @@ final class AccumulateCallsVC: TopicVC, OutputPresenting {
     let contentView: UIView = .init()
     let textView: UITextView = .init()
     
-    let bag = DisposeBag()
+    let bag: DisposeBag = .init()
 
     let button: UIButton = UIButton(type: .system)
 

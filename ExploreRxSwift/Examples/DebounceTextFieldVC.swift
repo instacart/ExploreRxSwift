@@ -6,7 +6,7 @@ final class DebounceTextFieldVC: TopicVC, OutputPresenting {
     let contentView: UIView = .init()
     let textView: UITextView = .init()
     
-    let bag = DisposeBag()
+    let bag: DisposeBag = .init()
 
     let textField = UITextField(frame: .zero)
 

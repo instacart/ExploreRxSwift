@@ -6,7 +6,8 @@ final class BackgroundAndConcurrencyVC: TopicVC, OutputPresenting {
     let contentView: UIView = .init()
     let textView: UITextView = .init()
 
-    let bag = DisposeBag()
+    let bag: DisposeBag = .init()
+    
     lazy var observable: Observable<Bool> = Observable
         .just(true)
         .do(onSubscribed: { [weak self] in

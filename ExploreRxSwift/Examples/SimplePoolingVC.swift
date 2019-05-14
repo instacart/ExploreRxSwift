@@ -5,7 +5,7 @@ final class SimplePoolingVC: TopicVC, OutputPresenting {
     let contentView: UIView = .init()
     let textView: UITextView = .init()
 
-    // let bag = DisposeBag()
+    // let bag: DisposeBag = .init()
 
     var disposable: Disposable? {
         didSet {
