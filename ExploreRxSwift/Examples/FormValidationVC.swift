@@ -35,10 +35,13 @@ final class FormValidationVC: TopicVC, OutputPresenting {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        emailField.placeholder = "E-mail"
         emailField.textContentType = .emailAddress
         emailField.keyboardType = .emailAddress
+        passwordField.placeholder = "Password"
         passwordField.isSecureTextEntry = true
         passwordField.textContentType = .password
+        numberField.placeholder = "Phone Number"
         numberField.textContentType = .telephoneNumber
         numberField.keyboardType = .numberPad
 
