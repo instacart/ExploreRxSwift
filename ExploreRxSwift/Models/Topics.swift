@@ -3,7 +3,7 @@ import UIKit
 enum Topics: String, CaseIterable {
     case backgroundAndConcurrency = "Background work & concurrency"
     case accumulateTapEvents = "Accumulate calls"
-    case simplePooling = "Simple pooling"
+    case simplePolling = "Simple polling"
     case debounceTextField = "Instant/auto text listeners"
     case formValidation = "Form validation"
     case githubRepos = "GitHub repos"
@@ -12,7 +12,7 @@ enum Topics: String, CaseIterable {
         switch self {
         case .backgroundAndConcurrency: return "using schedulers"
         case .accumulateTapEvents: return "using buffer"
-        case .simplePooling: return "using interval"
+        case .simplePolling: return "using interval"
         case .debounceTextField: return "using debounce"
         case .formValidation: return "using combineLatest"
         case .githubRepos: return nil
@@ -22,7 +22,7 @@ enum Topics: String, CaseIterable {
         switch self {
         case .backgroundAndConcurrency: return BackgroundAndConcurrencyVC()
         case .accumulateTapEvents: return AccumulateCallsVC()
-        case .simplePooling: return SimplePoolingVC()
+        case .simplePolling: return SimplePollingVC()
         case .debounceTextField: return DebounceTextFieldVC()
         case .formValidation: return FormValidationVC()
         case .githubRepos: return GitHubReposVC()

@@ -10,7 +10,6 @@
 		772374F1228B75580077BF79 /* FormValidationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772374F0228B75580077BF79 /* FormValidationVC.swift */; };
 		772374F3228B79470077BF79 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772374F2228B79470077BF79 /* Constant.swift */; };
 		775E2C6B227B5A4B00CEF06C /* OutputPresenting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775E2C6A227B5A4B00CEF06C /* OutputPresenting.swift */; };
-		775E2C6F227B5CBB00CEF06C /* SimplePoolingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775E2C6E227B5CBB00CEF06C /* SimplePoolingVC.swift */; };
 		778629C5225D0105009BDE15 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778629C4225D0105009BDE15 /* AppDelegate.swift */; };
 		778629C7225D0105009BDE15 /* TopicListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778629C6225D0105009BDE15 /* TopicListVC.swift */; };
 		778629CC225D0106009BDE15 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 778629CB225D0106009BDE15 /* Assets.xcassets */; };
@@ -26,6 +25,7 @@
 		77B86B9F226FC7FE00727D42 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B86B9E226FC7FE00727D42 /* Log.swift */; };
 		77C8C8802279023E00E66AB6 /* AccumulateCallsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C8C87F2279023E00E66AB6 /* AccumulateCallsVC.swift */; };
 		77C8C88222790CDC00E66AB6 /* DebounceTextFieldVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C8C88122790CDC00E66AB6 /* DebounceTextFieldVC.swift */; };
+		77E365B52294AE4E0095EE17 /* SimplePollingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E365B42294AE4E0095EE17 /* SimplePollingVC.swift */; };
 		D41281462272CD7E0053D8F4 /* GitHubAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41281452272CD7E0053D8F4 /* GitHubAPI.swift */; };
 		D41281482272CE0A0053D8F4 /* Repo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41281472272CE0A0053D8F4 /* Repo.swift */; };
 		D412814A2272CF2F0053D8F4 /* GitHubReposVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41281492272CF2F0053D8F4 /* GitHubReposVC.swift */; };
@@ -58,7 +58,6 @@
 		772374F0228B75580077BF79 /* FormValidationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormValidationVC.swift; sourceTree = "<group>"; };
 		772374F2228B79470077BF79 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		775E2C6A227B5A4B00CEF06C /* OutputPresenting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutputPresenting.swift; sourceTree = "<group>"; };
-		775E2C6E227B5CBB00CEF06C /* SimplePoolingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimplePoolingVC.swift; sourceTree = "<group>"; };
 		778629C1225D0105009BDE15 /* ExploreRxSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExploreRxSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		778629C4225D0105009BDE15 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		778629C6225D0105009BDE15 /* TopicListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicListVC.swift; sourceTree = "<group>"; };
@@ -78,6 +77,7 @@
 		77B86B9E226FC7FE00727D42 /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
 		77C8C87F2279023E00E66AB6 /* AccumulateCallsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccumulateCallsVC.swift; sourceTree = "<group>"; };
 		77C8C88122790CDC00E66AB6 /* DebounceTextFieldVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebounceTextFieldVC.swift; sourceTree = "<group>"; };
+		77E365B42294AE4E0095EE17 /* SimplePollingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimplePollingVC.swift; sourceTree = "<group>"; };
 		D41281452272CD7E0053D8F4 /* GitHubAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubAPI.swift; sourceTree = "<group>"; };
 		D41281472272CE0A0053D8F4 /* Repo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repo.swift; sourceTree = "<group>"; };
 		D41281492272CF2F0053D8F4 /* GitHubReposVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubReposVC.swift; sourceTree = "<group>"; };
@@ -164,7 +164,7 @@
 			children = (
 				779B17DA22691182008F6BB0 /* BackgroundAndConcurrencyVC.swift */,
 				77C8C87F2279023E00E66AB6 /* AccumulateCallsVC.swift */,
-				775E2C6E227B5CBB00CEF06C /* SimplePoolingVC.swift */,
+				77E365B42294AE4E0095EE17 /* SimplePollingVC.swift */,
 				77C8C88122790CDC00E66AB6 /* DebounceTextFieldVC.swift */,
 				772374F0228B75580077BF79 /* FormValidationVC.swift */,
 				D41281492272CF2F0053D8F4 /* GitHubReposVC.swift */,
@@ -324,12 +324,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				779B17DB22691182008F6BB0 /* BackgroundAndConcurrencyVC.swift in Sources */,
+				77E365B52294AE4E0095EE17 /* SimplePollingVC.swift in Sources */,
 				77B86B9F226FC7FE00727D42 /* Log.swift in Sources */,
 				772374F3228B79470077BF79 /* Constant.swift in Sources */,
 				D41281482272CE0A0053D8F4 /* Repo.swift in Sources */,
 				772374F1228B75580077BF79 /* FormValidationVC.swift in Sources */,
 				779B17D722691146008F6BB0 /* Topics.swift in Sources */,
-				775E2C6F227B5CBB00CEF06C /* SimplePoolingVC.swift in Sources */,
 				D412814A2272CF2F0053D8F4 /* GitHubReposVC.swift in Sources */,
 				778629C7225D0105009BDE15 /* TopicListVC.swift in Sources */,
 				779B17DF226918BD008F6BB0 /* TopicVC.swift in Sources */,
