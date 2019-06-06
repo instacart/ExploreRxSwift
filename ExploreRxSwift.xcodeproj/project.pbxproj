@@ -26,6 +26,7 @@
 		77C8C8802279023E00E66AB6 /* AccumulateCallsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C8C87F2279023E00E66AB6 /* AccumulateCallsVC.swift */; };
 		77C8C88222790CDC00E66AB6 /* DebounceTextFieldVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C8C88122790CDC00E66AB6 /* DebounceTextFieldVC.swift */; };
 		77E365B52294AE4E0095EE17 /* SimplePollingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E365B42294AE4E0095EE17 /* SimplePollingVC.swift */; };
+		77EFB9E822A72ABF009CA53B /* TwoWayDataBindingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77EFB9E722A72ABF009CA53B /* TwoWayDataBindingVC.swift */; };
 		D41281462272CD7E0053D8F4 /* GitHubAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41281452272CD7E0053D8F4 /* GitHubAPI.swift */; };
 		D41281482272CE0A0053D8F4 /* Repo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41281472272CE0A0053D8F4 /* Repo.swift */; };
 		D412814A2272CF2F0053D8F4 /* GitHubReposVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41281492272CF2F0053D8F4 /* GitHubReposVC.swift */; };
@@ -78,6 +79,7 @@
 		77C8C87F2279023E00E66AB6 /* AccumulateCallsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccumulateCallsVC.swift; sourceTree = "<group>"; };
 		77C8C88122790CDC00E66AB6 /* DebounceTextFieldVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebounceTextFieldVC.swift; sourceTree = "<group>"; };
 		77E365B42294AE4E0095EE17 /* SimplePollingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimplePollingVC.swift; sourceTree = "<group>"; };
+		77EFB9E722A72ABF009CA53B /* TwoWayDataBindingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoWayDataBindingVC.swift; sourceTree = "<group>"; };
 		D41281452272CD7E0053D8F4 /* GitHubAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubAPI.swift; sourceTree = "<group>"; };
 		D41281472272CE0A0053D8F4 /* Repo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repo.swift; sourceTree = "<group>"; };
 		D41281492272CF2F0053D8F4 /* GitHubReposVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubReposVC.swift; sourceTree = "<group>"; };
@@ -167,6 +169,7 @@
 				77E365B42294AE4E0095EE17 /* SimplePollingVC.swift */,
 				77C8C88122790CDC00E66AB6 /* DebounceTextFieldVC.swift */,
 				772374F0228B75580077BF79 /* FormValidationVC.swift */,
+				77EFB9E722A72ABF009CA53B /* TwoWayDataBindingVC.swift */,
 				D41281492272CF2F0053D8F4 /* GitHubReposVC.swift */,
 			);
 			path = Examples;
@@ -336,6 +339,7 @@
 				77C8C8802279023E00E66AB6 /* AccumulateCallsVC.swift in Sources */,
 				77C8C88222790CDC00E66AB6 /* DebounceTextFieldVC.swift in Sources */,
 				778629C5225D0105009BDE15 /* AppDelegate.swift in Sources */,
+				77EFB9E822A72ABF009CA53B /* TwoWayDataBindingVC.swift in Sources */,
 				D41281462272CD7E0053D8F4 /* GitHubAPI.swift in Sources */,
 				775E2C6B227B5A4B00CEF06C /* OutputPresenting.swift in Sources */,
 			);

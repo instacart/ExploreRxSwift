@@ -6,6 +6,7 @@ enum Topics: String, CaseIterable {
     case simplePolling = "Simple polling"
     case debounceTextField = "Instant/auto text listeners"
     case formValidation = "Form validation"
+    case twoWayDataBinding = "Two-way data binding"
     case githubRepos = "GitHub repos"
 
     var subtitle: String? {
@@ -15,6 +16,7 @@ enum Topics: String, CaseIterable {
         case .simplePolling: return "using interval"
         case .debounceTextField: return "using debounce"
         case .formValidation: return "using combineLatest"
+        case .twoWayDataBinding: return "using PublishSubject"
         case .githubRepos: return nil
         }
     }
@@ -25,6 +27,7 @@ enum Topics: String, CaseIterable {
         case .simplePolling: return SimplePollingVC()
         case .debounceTextField: return DebounceTextFieldVC()
         case .formValidation: return FormValidationVC()
+        case .twoWayDataBinding: return TwoWayDataBindingVC()
         case .githubRepos: return GitHubReposVC()
         }
     }
