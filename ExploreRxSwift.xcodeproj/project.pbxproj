@@ -15,6 +15,8 @@
 		778629CC225D0106009BDE15 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 778629CB225D0106009BDE15 /* Assets.xcassets */; };
 		778629CF225D0106009BDE15 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 778629CD225D0106009BDE15 /* LaunchScreen.storyboard */; };
 		778629DA225D0106009BDE15 /* ExploreRxSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778629D9225D0106009BDE15 /* ExploreRxSwiftTests.swift */; };
+		77938E5222B0635F00CA5734 /* EventBusVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77938E5122B0635F00CA5734 /* EventBusVC.swift */; };
+		77938E5522B06FAD00CA5734 /* bufferWithTrigger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77938E5422B06FAD00CA5734 /* bufferWithTrigger.swift */; };
 		779B17D722691146008F6BB0 /* Topics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779B17D622691146008F6BB0 /* Topics.swift */; };
 		779B17DB22691182008F6BB0 /* BackgroundAndConcurrencyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779B17DA22691182008F6BB0 /* BackgroundAndConcurrencyVC.swift */; };
 		779B17DF226918BD008F6BB0 /* TopicVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779B17DE226918BD008F6BB0 /* TopicVC.swift */; };
@@ -68,6 +70,8 @@
 		778629D5225D0106009BDE15 /* ExploreRxSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExploreRxSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		778629D9225D0106009BDE15 /* ExploreRxSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreRxSwiftTests.swift; sourceTree = "<group>"; };
 		778629DB225D0106009BDE15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77938E5122B0635F00CA5734 /* EventBusVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventBusVC.swift; sourceTree = "<group>"; };
+		77938E5422B06FAD00CA5734 /* bufferWithTrigger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bufferWithTrigger.swift; sourceTree = "<group>"; };
 		779B17D622691146008F6BB0 /* Topics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Topics.swift; sourceTree = "<group>"; };
 		779B17DA22691182008F6BB0 /* BackgroundAndConcurrencyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundAndConcurrencyVC.swift; sourceTree = "<group>"; };
 		779B17DE226918BD008F6BB0 /* TopicVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicVC.swift; sourceTree = "<group>"; };
@@ -110,6 +114,7 @@
 		775E2C69227B5A3200CEF06C /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				77938E5322B06F9C00CA5734 /* Ext */,
 				77B86B9E226FC7FE00727D42 /* Log.swift */,
 				775E2C6A227B5A4B00CEF06C /* OutputPresenting.swift */,
 				779B17DE226918BD008F6BB0 /* TopicVC.swift */,
@@ -161,6 +166,14 @@
 			path = ExploreRxSwiftTests;
 			sourceTree = "<group>";
 		};
+		77938E5322B06F9C00CA5734 /* Ext */ = {
+			isa = PBXGroup;
+			children = (
+				77938E5422B06FAD00CA5734 /* bufferWithTrigger.swift */,
+			);
+			path = Ext;
+			sourceTree = "<group>";
+		};
 		779B17D822691154008F6BB0 /* Examples */ = {
 			isa = PBXGroup;
 			children = (
@@ -170,6 +183,7 @@
 				77C8C88122790CDC00E66AB6 /* DebounceTextFieldVC.swift */,
 				772374F0228B75580077BF79 /* FormValidationVC.swift */,
 				77EFB9E722A72ABF009CA53B /* TwoWayDataBindingVC.swift */,
+				77938E5122B0635F00CA5734 /* EventBusVC.swift */,
 				D41281492272CF2F0053D8F4 /* GitHubReposVC.swift */,
 			);
 			path = Examples;
@@ -340,7 +354,9 @@
 				77C8C88222790CDC00E66AB6 /* DebounceTextFieldVC.swift in Sources */,
 				778629C5225D0105009BDE15 /* AppDelegate.swift in Sources */,
 				77EFB9E822A72ABF009CA53B /* TwoWayDataBindingVC.swift in Sources */,
+				77938E5222B0635F00CA5734 /* EventBusVC.swift in Sources */,
 				D41281462272CD7E0053D8F4 /* GitHubAPI.swift in Sources */,
+				77938E5522B06FAD00CA5734 /* bufferWithTrigger.swift in Sources */,
 				775E2C6B227B5A4B00CEF06C /* OutputPresenting.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

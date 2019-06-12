@@ -7,6 +7,7 @@ enum Topics: String, CaseIterable {
     case debounceTextField = "Instant/auto text listeners"
     case formValidation = "Form validation"
     case twoWayDataBinding = "Two-way data binding"
+    case eventBus = "Event bus"
     case githubRepos = "GitHub repos"
 
     var subtitle: String? {
@@ -17,9 +18,11 @@ enum Topics: String, CaseIterable {
         case .debounceTextField: return "using debounce"
         case .formValidation: return "using combineLatest"
         case .twoWayDataBinding: return "using PublishSubject"
+        case .eventBus: return "using bufferWithTrigger (Ext)"
         case .githubRepos: return nil
         }
     }
+
     var viewController: UIViewController {
         switch self {
         case .backgroundAndConcurrency: return BackgroundAndConcurrencyVC()
@@ -28,6 +31,7 @@ enum Topics: String, CaseIterable {
         case .debounceTextField: return DebounceTextFieldVC()
         case .formValidation: return FormValidationVC()
         case .twoWayDataBinding: return TwoWayDataBindingVC()
+        case .eventBus: return EventBusVC()
         case .githubRepos: return GitHubReposVC()
         }
     }
